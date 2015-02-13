@@ -12,6 +12,26 @@ $(document).ready(function() {
             ['', ''],
             ['', ''],
             ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
+            ['', ''],
             ['', '']
         ],
         container = document.getElementById('example'),
@@ -25,10 +45,6 @@ $(document).ready(function() {
         colHeaders: ['Side 1', 'Side 2'],
     });
     
-    $('#dialog1').on('shown.bs.modal', function() {
-        $(document).off('focusin.bs.modal');
-    });
-
 
     function bindDumpButton() {
 
@@ -42,7 +58,7 @@ $(document).ready(function() {
                 var hot = window[instance];
                 this.obj = hot.getData();
                 populateCards(this.obj);
-                console.log('data of ' + name, JSON.stringify(hot.getData()));
+                $("#dialog1").dialog('close');
             }
         });
     }
@@ -58,10 +74,16 @@ $(document).ready(function() {
     $("#deck").empty();
     for (var i = 0; i < obj_length; i++) {
         prop = obj[i];
+        if(prop[0]){
             new_card = '<li class="card"><div class="side_one"><p>' + prop[0] + '</p></div><div class="side_two"><p>' + prop[1] + '</p></div</li>';
             $("#deck").append(new_card);
+        }
     }
-    cycle();
+    new_card = '<li class="card"><div class="side_one"><p>Last card</p></div><div class="side_two"><p>Press right arrow to start again</p></div</li>';
+    $("#deck").append(new_card);
+    if($("#deck li").length > 1){
+        cycle();
+    }
     }
 
     //Modal Popup
@@ -70,7 +92,7 @@ $(document).ready(function() {
         $("#dialog1").dialog({
             autoOpen: false,
             width: 600,
-            height: 500,
+            height: 540,
             modal: false
         });
 
@@ -129,9 +151,15 @@ $(document).ready(function() {
             case key.down:
             case key.enter:
             case key.space:
+                if($("#dialog1").dialog('isOpen'))
+                {
+                    return true;
+                }
+                else {
                 $('.current').toggleClass('flip');
                 e.preventDefault();
                 break;
+                }
             case key.questionMark:
                 $('#keyboard_shortcuts').fadeToggle();
                 e.preventDefault();

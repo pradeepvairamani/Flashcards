@@ -92,6 +92,13 @@
     webkit-transform: rotateX(0deg);
     z-index: 1000;
 }
+.button-success {
+    background: rgb(28, 184, 65);
+    margin-bottom: 10px;
+}
+.button-success:hover {
+	background-color:#5cbf2a;
+}
 .card p
 {
     background-image: linear-gradient(#ffffff 0px,#ffffff 43px,#ff78b4 44px);
