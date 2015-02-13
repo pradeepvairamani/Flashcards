@@ -3,8 +3,8 @@
     font-family: 'Flash Cards';
     font-style: normal;
     font-weight: normal;
-    src: url("../resources/fonts/flash_cards/flash_cards.eot");
-    src: url("../resources/fonts/flash_cards/flash_cards.eot?#iefix") format("embedded-opentype"),url("../resources/fonts/flash_cards/flash_cards.svg#flash_cards") format("svg"),url("../resources/fonts/flash_cards/flash_cards.woff") format("woff"),url("../resources/fonts/flash_cards/flash_cards.ttf") format("truetype");
+    src: url("../fonts/flash_cards/flash_cards.eot");
+    src: url("../fonts/flash_cards/flash_cards.eot?#iefix") format("embedded-opentype"),url("../fonts/flash_cards/flash_cards.svg#flash_cards") format("svg"),url("../fonts/flash_cards/flash_cards.woff") format("woff"),url("../fonts/flash_cards/flash_cards.ttf") format("truetype");
 }
 #deck
 {
@@ -101,11 +101,7 @@
 }
 .card p
 {
-    background-image: linear-gradient(#ffffff 0px,#ffffff 43px,#ff78b4 44px);
-    background-image: -moz-linear-gradient(#ffffff 0px,#ffffff 43px,#ff78b4 44px);
-    background-image: -ms-linear-gradient(#ffffff 0px,#ffffff 43px,#ff78b4 44px);
-    background-image: -o-linear-gradient(#ffffff 0px,#ffffff 43px,#ff78b4 44px);
-    background-image: -webkit-linear-gradient(#ffffff 0px,#ffffff 0px,#F0F7EE 0px);
+    background-color: rgb(169, 218, 149);
     background-size: 500px 45px;
     display: table-cell;
     height: 300px;
@@ -240,7 +236,7 @@
 body
 {
     /*background: #39561B;*/
-    background-image: url("../resources/images/bg-5-full.jpg");;
+    background-image: url("../images/bg-5-full.jpg");
     font: 15px sans-serif;
     margin: 0 auto;
     text-align: center;

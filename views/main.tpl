@@ -72,8 +72,8 @@
 
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
 
-    <script src="js/plugins/jquery.cycle.js"></script>
-    <script src="js/plugins/flash_cards.js"></script>
-    <script src="js/plugins/jsons.js"></script>
+    <script src="js/jquery.cycle.js"></script>
+    <script src="js/flash_cards.js"></script>
+    <script src="js/jsons.js"></script>
   </body>
   </html>
