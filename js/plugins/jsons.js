@@ -1,1 +1,1 @@
-var words = [["one","Okkati"],["two","rendu"],["three","moodu"],["",""],["",""],["",""]];
+var words = [["one","1"],["two","2"],["three","3"],["",""],["",""],["",""]];
