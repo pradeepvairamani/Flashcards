@@ -7,7 +7,6 @@
   <title>Flash Cards</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style.css">
   
   <script src="http://handsontable.com/dist/handsontable.full.js"></script>
   <link rel="stylesheet" media="screen" href="http://handsontable.com/dist/handsontable.full.css">

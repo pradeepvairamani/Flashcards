@@ -32,9 +32,6 @@
     position: relative;
     webkit-perspective: 1600;
     width: 500px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
 }
 .card:first-child
 {
@@ -104,8 +101,8 @@
 }
 .card p
 {
-    background-color: rgb(225, 231, 222);
-    background-size: 500px 45px;
+    background-image: url("http://everything.typepad.com/blog/images/2008/03/28/bluegrad.png");
+/*    background-color: rgb(225, 231, 222);*/
     display: table-cell;
     height: 300px;
     vertical-align: middle;
